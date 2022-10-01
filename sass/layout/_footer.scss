@@ -1,0 +1,28 @@
+.site-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
+}
+.footer-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foter-tablet-block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .foter-tablet-block {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flexbox {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
+}
